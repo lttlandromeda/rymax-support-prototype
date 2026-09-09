@@ -1,0 +1,16 @@
+---
+/**
+ * Prototype — the right panel of the deck: the interactive phone.
+ *
+ * The "try it" hint above the device is set per-feature by app.js;
+ * everything inside the frame is owned by the active feature module.
+ */
+import PhoneFrame from './PhoneFrame.astro';
+---
+
+<div class="proto-right">
+  <!-- Try-it hint above the device -->
+  <p class="proto-try" id="proto-try"></p>
+
+  <PhoneFrame />
+</div>

@@ -1,0 +1,26 @@
+---
+/**
+ * PhoneFrame — the device chrome: bezel, side buttons, screen,
+ * Dynamic Island and status bar. The screen body (#feature-container)
+ * is filled at runtime by the active feature module.
+ */
+import StatusBar from './StatusBar.astro';
+---
+
+<div class="phone-frame">
+  <!-- Decorative side buttons -->
+  <div class="phone-btn phone-btn-silent" aria-hidden="true"></div>
+  <div class="phone-btn phone-btn-vol-up" aria-hidden="true"></div>
+  <div class="phone-btn phone-btn-vol-dn" aria-hidden="true"></div>
+  <div class="phone-btn phone-btn-power" aria-hidden="true"></div>
+
+  <!-- Screen -->
+  <div class="phone-screen" id="phone-screen">
+    <div class="phone-island" aria-hidden="true"></div>
+
+    <StatusBar />
+
+    <!-- Feature content — populated by the active feature module -->
+    <div id="feature-container" class="phone-feature-area"></div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+{
+  "name": "rymax-support-prototype",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Rymax × Chase — Customer Support AI POC. Astro build of the slide-by-slide prototype deck.",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "devDependencies": {
+    "astro": "^4.16.18"
+  }
+}

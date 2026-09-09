@@ -1,0 +1,79 @@
+/* =======================================================
+   Rymax × Chase — Design tokens
+   Values taken from the Figma source:
+   Rymax-Customer-Support-AI-POC · v2 · 01 · Support Hub
+   ======================================================= */
+
+/* ── Queens (Klim) — the display face used in Figma ─────────
+   Licensed font, served locally. Body copy is Open Sans,
+   loaded from Google Fonts in index.html.
+   ─────────────────────────────────────────────────────────── */
+
+@font-face {
+  font-family: 'Queens';
+  src: url('/fonts/Queens_W-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Queens';
+  src: url('/fonts/Queens_W-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+
+  /* ── Deck surfaces (slide canvas) ─────────────────────── */
+  --deck-bg:          #413d3d;
+  --deck-title:       #faf4ed;
+  --deck-body:        #e2ddd6;
+  --deck-muted:       rgba(226, 221, 214, 0.50);
+  --deck-faint:       rgba(226, 221, 214, 0.26);
+  --deck-line:        rgba(250, 244, 237, 0.14);
+
+  /* ── App surfaces ─────────────────────────────────────── */
+  --app-bg:           #faf4ed;
+  --app-surface:      #ffffff;
+  --app-border:       #eae1d7;
+  --app-placeholder:  #e5e5e5;
+  --app-ink:          #2e2e2e;
+
+  /* ── App text ─────────────────────────────────────────── */
+  --text-primary:     #2e2e2e;
+  --text-secondary:   #5c5c5c;
+  --text-tertiary:    #8a8a8a;
+  --text-inverse:     #faf4ed;
+
+  /* ── Typography ───────────────────────────────────────── */
+  --font-display:     'Queens', Georgia, 'Times New Roman', serif;
+  --font-body:        'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-system:      -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif;
+
+  /* Slide type scale */
+  --type-slide-title:    52px;
+  --type-slide-title-lh: 1.13;
+  --type-slide-sub:      19px;
+
+  /* App type scale (Figma) */
+  --type-display-l:   28px;    /* "Hello, Marcus."          */
+  --type-body:        13px;
+  --type-body-sm:     12.5px;
+  --type-body-xs:     11px;
+  --type-label:       10.5px;  /* section labels, tracked   */
+  --type-title-sm:    13.5px;
+  --type-header:      15.5px;
+
+  /* ── Radii ────────────────────────────────────────────── */
+  --radius-card:      12px;
+  --radius-thumb:     8px;
+  --radius-pill:      999px;
+  --radius-bubble:    16px;
+
+  /* ── Shadows ──────────────────────────────────────────── */
+  --shadow-card:      0 1px 2px rgba(46, 46, 46, 0.04);
+  --shadow-raised:    0 6px 20px rgba(46, 46, 46, 0.08);
+}

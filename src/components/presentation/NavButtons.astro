@@ -1,0 +1,43 @@
+---
+/**
+ * NavButtons — Prev / Next pills plus the keyboard hint.
+ * State (disabled) is driven by the shell script (app.js).
+ */
+---
+
+<div class="proto-buttons">
+  <button class="proto-btn proto-btn--prev" id="btn-prev" disabled aria-label="Previous feature">
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+    >
+      <polyline points="15 18 9 12 15 6" />
+    </svg>
+    Prev
+  </button>
+  <button class="proto-btn proto-btn--next" id="btn-next" aria-label="Next feature">
+    Next
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+    >
+      <polyline points="9 18 15 12 9 6" />
+    </svg>
+  </button>
+</div>
+
+<p class="proto-hint">← → arrow keys also navigate</p>

@@ -1,0 +1,27 @@
+---
+/**
+ * Presentation — the left panel of the deck.
+ *
+ * Holds the slide copy (feature count / title / subtitle / description)
+ * and the navigation. All of it is populated at runtime by app.js as
+ * the deck moves between features; the markup here is the empty stage.
+ */
+import NavButtons from './NavButtons.astro';
+---
+
+<div class="proto-left">
+  <div class="proto-left-inner">
+    <!-- Feature count + title + subtitle — populated by renderShell() -->
+    <div class="proto-meta" id="proto-meta"></div>
+
+    <NavButtons />
+
+    <!-- Per-feature description block -->
+    <div class="proto-desc-block" id="proto-desc-block" style="display:none">
+      <div class="proto-divider"></div>
+      <div class="proto-description" id="feature-description"></div>
+    </div>
+
+    <p class="proto-caption">Rymax × Chase — Customer Support AI POC · v0.1</p>
+  </div>
+</div>
