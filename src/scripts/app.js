@@ -13,7 +13,6 @@ import { features } from '../data/features.js';
 const metaEl   = document.getElementById('proto-meta');
 const descBlk  = document.getElementById('proto-desc-block');
 const descEl   = document.getElementById('feature-description');
-const tryEl    = document.getElementById('proto-try');
 const screenEl = document.getElementById('feature-container');
 const prevBtn  = document.getElementById('btn-prev');
 const nextBtn  = document.getElementById('btn-next');
@@ -52,10 +51,17 @@ if (metaEl && screenEl && prevBtn && nextBtn) {
       descBlk.style.display = 'none';
     }
 
-    tryEl.textContent = feature.try || '';
-
     prevBtn.disabled = index === 0;
     nextBtn.disabled = index === features.length - 1;
+
+    /* Soft, slightly staggered fade-up for the left-panel copy. */
+    [metaEl, descBlk].forEach((node, i) => {
+      if (!node) return;
+      node.classList.remove('deck-fade-in');
+      void node.offsetWidth; /* restart the animation */
+      node.style.animationDelay = i * 110 + 'ms';
+      node.classList.add('deck-fade-in');
+    });
   }
 
   function show(index) {
