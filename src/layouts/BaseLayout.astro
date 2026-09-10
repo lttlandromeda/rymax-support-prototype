@@ -29,7 +29,7 @@ const { title = 'Rymax — Customer Support AI POC' } = Astro.props;
 
     <link
       rel="preload"
-      href="/fonts/Queens_W-Regular.woff"
+      href={`${import.meta.env.BASE_URL}/fonts/Queens_W-Regular.woff`}
       as="font"
       type="font/woff"
       crossorigin

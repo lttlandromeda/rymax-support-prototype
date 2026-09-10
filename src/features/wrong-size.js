@@ -38,7 +38,7 @@ export const wrongSize = (function () {
      in the flow. Thumbnail falls back to the grey placeholder
      until /photos/tag-stub.jpg exists. See public/photos.     */
 
-  const STUB = '/photos/tag-stub.jpg';
+  const STUB = `${import.meta.env.BASE_URL}/photos/tag-stub.jpg`;
 
   const SHOTS = [
     {

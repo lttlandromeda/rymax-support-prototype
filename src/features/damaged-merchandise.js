@@ -23,7 +23,7 @@ export const damagedMerchandise = (function () {
      flow. `img` is the thumbnail once taken — every shot points
      at the one placeholder photo for now; swap per-shot later. */
 
-  const STUB = '/photos/damage-stub.jpg';
+  const STUB = `${import.meta.env.BASE_URL}/photos/damage-stub.jpg`;
 
   const SHOTS = [
     {
